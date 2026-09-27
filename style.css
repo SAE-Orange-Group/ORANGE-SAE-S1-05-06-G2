@@ -44,6 +44,21 @@ html {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.orange-logo {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.orange-logo-link {
+    display: block;
+    flex-shrink: 0;
+    line-height: 0;
+    margin-right: 10px;
+}
+
 #sec-0 header.top p {
     display: flex;
     width: 45%;
