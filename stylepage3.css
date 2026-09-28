@@ -1,1 +1,320 @@
+#page3{
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline-style: none;
+    }
 
+html {
+    font-size: 12px;
+    color: #000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --txtaccent: #fff7f2;
+    --txtaccent1: #ffd0a5;
+    --textaccent2: #f7a35d;
+    --textaccent3: #3d240e;
+    --txtaccent4: #f97316;
+    --txtaccent5: #fff1e6;
+    --haccent: #f97316;
+    --haccent_withOpacity: rgba(249, 115, 22, 0.72);
+    --haccent2: #fffaf5;
+    --bgaccent: #1c110b;
+    --bgaccent_withOpacity: rgba(28, 17, 11, 0.96);
+    --editor-border-color: #d5d5d5;
+    --editor-border-width: 1px;
+    --editor-background: transparent;
+    --editor-padding: 0;
+    --editor-border-radius: 8px;
+}
+
+.container {
+    width: 95%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* ================= SECTION ZERO (FOND FLOUTÉ) ================= */
+#sec-0 {
+    position: relative;
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c110b; /* Couleur au cas où l'image met du temps à charger */
+}
+
+/* IMAGE FLOUTÉE EN ARRIÈRE PLAN */
+#sec-0::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("arbre2.jpg") no-repeat center center / cover;
+    filter: blur(0px);
+    transform: scale(1.02);
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+/* S'assure que le contenu passe au-dessus du flou */
+#sec-0 header,
+#sec-0 article {
+    position: relative;
+    z-index: 1;
+}
+
+/* ================= NAVBAR ET TOP BAR ================= */
+#sec-0 header.top {
+    background-color: var(--haccent);
+    font-size: 0.85rem;
+    color: #fff;
+    padding: 6px 0;
+}
+#sec-0 header.top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sec-0 header.top p {
+    display: inline-block;
+    color: #fff;
+}
+#sec-0 .top .social a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#sec-0 header:last-of-type {
+    padding: 10px 0;
+}
+#sec-0 header:last-of-type .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec-0 header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--haccent);
+}
+#sec-0 header h1 span {
+    color: #fff;
+}
+#sec-0 header h1 p {
+    font-size: 0.8rem;
+    color: var(--textaccent2);
+    font-weight: normal;
+}
+
+.orange-logo {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.orange-logo-link {
+    display: block;
+    flex-shrink: 0;
+    line-height: 0;
+    margin-right: 10px;
+}
+
+.meme {
+    margin-left: auto;
+}
+
+.site-footer {
+    padding: 28px 20px;
+    background: var(--bgaccent);
+    color: var(--txtaccent);
+    text-align: center;
+}
+
+.site-footer p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.student-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+    padding: 0;
+    list-style: none;
+    color: var(--txtaccent1);
+    font-size: 1rem;
+}
+
+#sec-0 header nav {
+    display: flex;
+    gap: 10px;
+}
+#sec-0 header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+}
+#sec-0 header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+#sec-0 header label,
+#sec-0 header input {
+    display: none;
+}
+
+/* ================= LA CARTE GLASS (TEXTE LISIBLE) ================= */
+#sec-0 article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.glass-card {
+    width: 90%;
+    max-width: 950px;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+}
+
+/* Titre du haut */
+.glass-card .sur-titre {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--txtaccent);
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+/* Grand titre INVESTISSEMENT */
+.glass-card h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--txtaccent);
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+/* Texte descriptif */
+.glass-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--txtaccent);
+    max-width: 760px;
+    margin: 0 auto 3rem;
+    text-shadow: none;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.glass-card h2 span {
+    color: var(--haccent);
+}
+/* Import Google Fonts - Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+
+@media (max-width: 700px) {
+    .section-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-graph {
+        min-height: 220px;
+    }
+
+    .orange-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .orange-logo-link {
+        margin-right: 10px;
+    }
+}
+.card-list .card-item{
+    list-style: none;
+    
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+.card-list .card-item .card-link:hover{
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+   
+.card-list .card-link .badge{
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background-color: #E6EDFF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #000;
+   
+}
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50px;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+}
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background-color:#5372F0;
+}
+}
