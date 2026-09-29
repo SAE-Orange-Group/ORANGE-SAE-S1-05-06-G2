@@ -37,17 +37,16 @@ html {
     padding: 0px;
 }
 
-/* ================= SECTION ZERO (FOND FLOUTÉ) ================= */
 #sec-0 {
     position: relative;
     overflow: hidden;
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    background-color: #1c110b; /* Couleur au cas où l'image met du temps à charger */
+    background-color: #1c110b; 
 }
 
-/* IMAGE FLOUTÉE EN ARRIÈRE PLAN */
+
 #sec-0::before {
     content: "";
     position: absolute;
@@ -61,14 +60,14 @@ html {
     z-index: 0;
 }
 
-/* S'assure que le contenu passe au-dessus du flou */
+
 #sec-0 header,
 #sec-0 article {
     position: relative;
     z-index: 1;
 }
 
-/* ================= NAVBAR ET TOP BAR ================= */
+
 #sec-0 header.top {
     background-color: var(--haccent);
     font-size: 0.85rem;
@@ -176,7 +175,7 @@ html {
     display: none;
 }
 
-/* ================= LA CARTE GLASS (TEXTE LISIBLE) ================= */
+
 #sec-0 article {
     flex: 1;
     display: flex;
@@ -198,7 +197,7 @@ html {
     border: none;
 }
 
-/* Titre du haut */
+
 .glass-card .sur-titre {
     font-size: 1.8rem;
     font-weight: 400;
@@ -209,7 +208,7 @@ html {
     text-shadow: none;
 }
 
-/* Grand titre INVESTISSEMENT */
+
 .glass-card h2 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -220,7 +219,7 @@ html {
     text-shadow: none;
 }
 
-/* Texte descriptif */
+
 .glass-card p {
     font-size: 1rem;
     line-height: 1.6;
