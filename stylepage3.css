@@ -1,4 +1,4 @@
-#page3{
+
     * {
     margin: 0px;
     padding: 0px;
@@ -54,7 +54,7 @@ html {
     inset: 0;
     background:
         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url("arbre2.jpg") no-repeat center center / cover;
+        url("images/arbre2.jpg") no-repeat center center / cover;
     filter: blur(0px);
     transform: scale(1.02);
     background-size: 100% 100%;
@@ -317,4 +317,4 @@ html {
     color: #fff;
     background-color:#5372F0;
 }
-}
+
