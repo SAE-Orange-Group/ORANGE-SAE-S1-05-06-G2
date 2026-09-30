@@ -33,7 +33,7 @@ html {
 #sec-0 {
     background:
         linear-gradient(rgba(248, 127, 15, 0.6), rgba(0, 0, 0, 0.6)),
-        url(imageicon/orange.jpeg) no-repeat top center/cover;
+        url(images/logo/orange.jpeg) no-repeat top center/cover;
 }
 #sec-0 header.top {
     background-color: var(--haccent);
