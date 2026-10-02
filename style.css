@@ -31,7 +31,7 @@ html {
 }
 /* SECTION ZERO = LANDING VIEW */
 #sec-0{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(menuimages/orange.jpeg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(menuimages/orange.jpg) no-repeat center center/cover;
 }
 #sec-0 header.top {
     background-color: var(--haccent);
