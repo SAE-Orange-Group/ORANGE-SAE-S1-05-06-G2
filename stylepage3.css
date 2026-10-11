@@ -380,6 +380,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 80px;
     
 }
 .eolienne{
@@ -421,6 +422,7 @@ html {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-bottom: 80px;
 }
 .serveur{
     margin-top:120px;
@@ -466,6 +468,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 80px;
 }
 .recycle{
     margin-top:120px;
@@ -509,6 +512,7 @@ html {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-bottom: 80px;
 }
 .préserver{
     margin-top:120px;
