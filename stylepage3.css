@@ -196,6 +196,7 @@ html {
     text-align: center;
     box-shadow: none;
     border: none;
+    
 }
 
 
@@ -207,6 +208,7 @@ html {
     color: var(--txtaccent);
     margin-bottom: 10px;
     text-shadow: none;
+    
 }
 
 
@@ -295,17 +297,17 @@ html {
 
 /* titre */
 #sect-2 .titre_descri h2{
-    font-size: 3rem;
+    font-size: 3.6rem;
     margin: 20px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .titre_descri p{
     text-align: auto;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     
 }
 #sect-2 .titre_descri .highlight{
@@ -396,7 +398,7 @@ html {
     margin-bottom: 80px;
 }
 .eolienne{
-    margin-top: 100px;
+    margin-top:120px;
     margin-right: 20px;
     width: 50%;
     height: 70%;
