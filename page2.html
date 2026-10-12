@@ -1,542 +1,199 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    outline-style: none;
-    }
-
-html {
-    font-size: 12px;
-    color: #000;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root {
-    --txtaccent: #fff7f2;
-    --txtaccent1: #ffd0a5;
-    --textaccent2: #f7a35d;
-    --textaccent3: #3d240e;
-    --txtaccent4: #f97316;
-    --txtaccent5: #fff1e6;
-    --haccent: #f97316;
-    --haccent_withOpacity: rgba(249, 115, 22, 0.72);
-    --haccent2: #fffaf5;
-    --bgaccent: #1c110b;
-    --bgaccent_withOpacity: rgba(28, 17, 11, 0.96);
-    --editor-border-color: #d5d5d5;
-    --editor-border-width: 1px;
-    --editor-background: transparent;
-    --editor-padding: 0;
-    --editor-border-radius: 8px;
-}
-
-.container {
-    width: 95%;
-    margin: 0px auto;
-    padding: 0px;
-}
-
-#sec-0 {
-    position: relative;
-    overflow: hidden;
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #1c110b; 
-}
-
-
-#sec-0::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(rgba(252, 101, 1, 0.3), rgba(0, 0, 0, 0.5)),
-        url("images/ampoule.jpg") no-repeat center center / cover;
-    filter: blur(0px);
-    transform: scale(1.02);
-    background-size: 100% 100%;
-    z-index: 0;
-}
-
-
-#sec-0 header,
-#sec-0 article {
-    position: relative;
-    z-index: 1;
-}
-
-
-#sec-0 header.top {
-    background-color: var(--haccent);
-    font-size: 0.85rem;
-    color: #fff;
-    padding: 6px 0;
-}
-#sec-0 header.top .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#sec-0 header.top p {
-    display: inline-block;
-    color: #fff;
-}
-#sec-0 .top .social a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-#sec-0 header:last-of-type {
-    padding: 10px 0;
-}
-#sec-0 header:last-of-type .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-#sec-0 header h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--haccent);
-}
-#sec-0 header h1 span {
-    color: #fff;
-}
-#sec-0 header h1 p {
-    font-size: 0.8rem;
-    color: var(--textaccent2);
-    font-weight: normal;
-}
-
-.orange-logo {
-    width: 54px;
-    height: 54px;
-    flex-shrink: 0;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.orange-logo-link {
-    display: block;
-    flex-shrink: 0;
-    line-height: 0;
-    margin-right: 10px;
-}
-
-.meme {
-    margin-left: auto;
-}
-
-.site-footer {
-    padding: 28px 20px;
-    background: var(--bgaccent);
-    color: var(--txtaccent);
-    text-align: center;
-}
-
-.site-footer p {
-    margin-bottom: 12px;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.student-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 28px;
-    padding: 0;
-    list-style: none;
-    color: var(--txtaccent1);
-    font-size: 1rem;
-}
-
-#sec-0 header nav {
-    display: flex;
-    gap: 10px;
-}
-#sec-0 header nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 14px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background 0.3s ease;
-}
-#sec-0 header nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-}
-#sec-0 header label,
-#sec-0 header input {
-    display: none;
-}
-
-
-#sec-0 article {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-.glass-card {
-    width: 90%;
-    max-width: 950px;
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border-radius: 0;
-    padding: 0;
-    text-align: center;
-    box-shadow: none;
-    border: none;
-}
-
-
-.glass-card .sur-titre {
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: none;
-    color: var(--txtaccent);
-    margin-bottom: 10px;
-    text-shadow: none;
-}
-
-
-.glass-card h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: var(--txtaccent);
-    text-transform: uppercase;
-    line-height: 1em;
-    margin-bottom: 15px;
-    text-shadow: none;
-}
-
-
-.glass-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--txtaccent);
-    max-width: 760px;
-    margin: 0 auto 3rem;
-    text-shadow: none;
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-
-.glass-card h2 span {
-    color: var(--haccent);
-}
-
-
-
-
-@media (max-width: 700px) {
-    .section-content {
-        grid-template-columns: 1fr;
-    }
-
-    .section-graph {
-        min-height: 220px;
-    }
-
-    .orange-logo {
-        width: 42px;
-        height: 42px;
-    }
-
-    .orange-logo-link {
-        margin-right: 10px;
-    }
-}
-.card-list .card-item{
-    list-style: none;
-    
-}
-/* bande séparatrice orange */
-.hr {
-    margin: 20px;
-    margin-top: 100px;
-    width: 7%;
-    border-width: 2px;
-    border-style: solid;
-    color: var(--haccent);
-}
-/* l'introduction */
-.titre1 h2{
-    font-size: 3.6rem;
-    margin-bottom: 20px;
-}
-
-.sec1{
-font-size: 30px;
-line-height: 1.8;
-margin:30px 0;
-}
-
-.sec1 p{
-margin-bottom: 30px;
-}
-
-.sous_intro {
-    font-size: 30px;
-    margin: 20px;
-    font-weight: bold;
-}
-.descri{
-    font-size: 20px;
-    margin: 20px;
-    width: auto;
-}
-
-
-
-/* titre */
-#sect-2 .titre_descri h2{
-    font-size: 3rem;
-    margin: 20px;
-    
-}
-.titre_descri p{
-    text-align: auto;
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-    margin: 20px;
-    
-}
-#sect-2 .titre_descri .highlight{
-    color: var(--haccent);
-    
-}
-/* les cartes : */
-
-/* carte 1 */
-.card1 {
-
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-    margin: 30px;
-    margin-top: 100px;
-    padding: 20px;
-    width: 50%;
-    background-color: white;
-    
-   
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    color: black;
-}
-.card-title{
-    padding-top: 10px;
-    font-weight: bold;
-    color: black;
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-.card-description{
-    color: black;
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-   
-}
-.card-description2{
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.donnée1{
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.description_donnée{
-    margin-bottom: 10px;
-}
-.card-objective{
-    color: black;
-    font-size: 2.1rem;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-    
-    background-color: #fff5ec;
-    margin: 0 auto;
-    padding: 10px;
-    
-}
-
-.card1:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-}
-/*image ce carte 1*/
-.content3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 80px;
-    
-}
-.eolienne{
-    margin-top:120px;
-    margin-right: 20px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.eolienne:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
-}
-/* carte 2 */
-.card2 {
-
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 230px;
-    margin: 30px;
-    padding: 20px;
-    width: 50%;
-    margin-left: auto;
-    background-color: white;
-    
-   
-}
-
-.card2:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-}
-/*image de carte 2*/
-.content4{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.serveur{
-    margin-top:120px;
-    margin-left: 20px;
-    margin: 10px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.serveur:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
-}
-
-
-/* carte 3 */
-
-.card3 {
-
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 230px;
-    margin: 30px;
-    padding: 20px;
-    width: 50%;
-    
-    background-color: white;
-    
-   
-}
-
-.card3:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-}
-
-/*image de carte 3*/
-.content5{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.recycle{
-    margin-top:120px;
-    margin-right: 20px;
-    margin: 10px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.recycle:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
-}
-/* carte 4 */
-
-.card4 {
-
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 230px;
-    margin: 30px;
-    padding: 20px;
-    width: 50%;
-    margin-left: auto;
-    background-color: white;
-    
-   
-}
-
-.card4:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-}
-
-/*image de carte 4*/
-.content6{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.préserver{
-    margin-top:120px;
-    margin-left: 20px;
-    margin: 10px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.préserver:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
-}
-
-
-
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+       
+        <title>Impact Ecologique</title>
+        <link rel="icon" href="images/logo/orange.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=counter_1,counter_2,counter_3,counter_4" />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylepage2.css" type="text/css" media="screen" />
+    </head>
+    <body id="page2">
+        <section id="sec-0">
+            <header class="ana">
+                <div class="hide" id="searchBar">
+                    <input
+                        type="search"
+                        name="searchBox"
+                        id="searchBox"
+                        placeholder="Type your search here.. Press [Esc] to exist"
+                    />
+                </div>
+                <div class="container">
+                    <a class="orange-logo-link" href="index.html" aria-label="Retour à l'accueil">
+                        <img class="orange-logo" src="images/logo/orange.jpg" alt="Logo Orange" />
+                    </a>
+                    <h1>
+                        <span>Orange</span>
+                        <p class="you">Votre univers numérique, simplement</p>
+                    </h1>
+                    <div class="meme">
+                        <nav class="me">
+                            <a href="index.html">Accueil</a>
+                            <a href="page1.html">Economie</a>
+                            <a href="page2.html">Innovations</a>
+                            <a href="page3.html">Impact Ecologie</a>
+                            <a href="#">Aide</a>
+                            <a href="#">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <article>
+                <div class="glass-card">
+                    <p class="sur-titre">INNOVATIONS</p>
+                    <h2>Une fibre plus rapide</h2>
+                    <p>
+                        Orange s'engage pour un avenir plus responsable et durable. Nous mettons en œuvre des initiatives visant à réduire notre empreinte écologique, promouvoir l'économie circulaire et soutenir les communautés locales. Découvrez comment nous intégrons le développement durable dans nos activités quotidiennes et nos projets innovants.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <br>
+        <hr class="hr">
+
+       
+        <section id="sect-1">
+            <div class="titre1">
+                <div class="sec1">
+                <h2>Les domaines d'innovation</h2>
+                <a>intelligence artificielle</a>
+                <a>Co-création et agilité</a>
+                <a>fffdssfdffdfsd</a>
+
+                </div>
+            </div>
+
+        <hr class="hr">
+        </section>
+        <section id="sect-2">
+            <div class="titre_descri">
+                <h2>Comment Orange s'engage pour <span class="highlight">l'environnement</span> ?</h2>
+                <p> Orange agit pour la planète à travers 4 grands axes :</p>
+            </div>
+            <div class="content3">
+            <div class="card1">                
+                <span class="material-symbols-outlined">
+                counter_1
+                </span>
+
+                <p class="card-title">
+                    Réduire les émissions de CO2
+                </p>
+                <p class="card-description">
+                    Orange réduit les émissions de gaz à effet de serre liées à ses activités et à sa chaîne de valeur. 
+                </p>
+                <p class="card-description2">
+                    CHIFFRE CLÉ
+                </p>
+                <p class="donnée1">
+                    -49%
+                </p>
+                <p class="description_donnée">
+                    d'émissions directes entre 2015 et 2025.
+                </p>
+                <p class="card-objective">
+                    Objectif : <br><br> Net Zéro Carbone en 2040 avec une réduction d'au moins 90% des émissions.
+                </p>
+                
+            </div>
+           <img class="eolienne" src="images/eolienne.jpg" width="400" >
+            </div>
+
+            <div class="content4">
+            <div class="card2">                
+                <span class="material-symbols-outlined">
+                counter_2
+                </span>
+
+                <p class="card-title">
+                    Réduire la consommation d'énergie
+                </p>
+                 <p class="card-description">
+                    Orange modernise ses réseaux et ses centres de données pour consommer moins d'électricité et développe les énergies renouvelables.
+
+                 </p>
+                <p class="card-description2">
+                    CHIFFRE CLÉ
+                </p>
+                <p class="donnée1">
+                    1452 GWh
+                </p>
+                <p class="description_donnée">
+                    d'électricité économisés en 2025 grâce au programme Green ITN.
+                </p>
+
+            </div>
+            <img class="serveur" src="images/serveur.jpg" width="400" >
+            </div>
+
+            <div class="content5">
+            <div class="card3">                
+                <span class="material-symbols-outlined">
+                counter_3
+                </span>
+
+                <p class="card-title">
+                    Développer l'économie circulaire
+                </p>
+                <p class="card-description">
+                    Orange encurage la collecte, la réparation, le reconditionnement et le recyclage des téléphones et des équipements numériques.
+                </p>
+
+                <p class="card-description2">
+                    CHIFFRE CLÉ
+                </p>
+                <p class="donnée1">
+                    24,5 millions
+                </p>
+                <p class="description_donnée">
+                    de mobiles collectés depuis 2010 pour être reconditionnés ou recyclés.
+                </p>                
+                <p class="card-objective">
+                    Objectif : <br><br> Prolonger la durée de vie des équipements et limiter les déchets.
+                </p>
+            </div>
+                <img class="recycle" src="images/recycle.jpg" width="400" >
+            </div>
+
+
+            <div class="content6">
+            <div class="card4">                
+                <span class="material-symbols-outlined">
+                counter_4
+                </span>
+
+                <p class="card-title">
+                   Préserver la nature et les ressources
+                </p>
+                <p class="card-description">
+                    Orange soutient des initiatives de reforestation et cherche à limiter les conséquences du changement climatique sur ses infrastructures.
+                </p>
+                <p class="card-description2">
+                    CHIFFRE CLÉ
+                </p>
+                <p class="donnée1">
+                    10%
+                </p>
+                <p class="description_donnée">
+                    des émissions devraient être résiduelles en 2040 et compensées par des puits de carbone naturels, selon la trajectoire annoncée par Orange.
+                </p>
+
+            </div>
+                <img class="préserver" src="images/préserver.jpg" width="400" >
+            </div>
+        </section>
+        
+        
+
+        <footer class="site-footer">
+            <p>Page réalisée par :</p>
+            <ul class="student-list">
+                <li>Defné</li>
+            </ul>
+        </footer>
+    </body>
+</html>
