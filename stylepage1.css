@@ -332,6 +332,26 @@ html {
     color: #1d110b;
 }
 
+#geant-eco,
+#business {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(24px, 4vw, 56px);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#business > .card-business {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#business > .business-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .content-section {
     width: 100%;
     max-width: 1200px;
@@ -391,5 +411,233 @@ html {
 
     .orange-logo-link {
         margin-right: 10px;
+    }
+}
+
+/* les cartes : */
+
+.card-eco,
+.card-business {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 0;
+    padding: clamp(24px, 3vw, 40px);
+    width: 100%;
+    background-color: white;
+    border: 1px solid #f0d7c5;
+    border-top: 4px solid #ff6600;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(61, 36, 14, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.material-symbols-outlined {
+    display: block;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    font-size: 36px;
+    font-feature-settings: 'liga';
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: #ff6600;
+    margin-bottom: 16px;
+}
+.card-eco .card-title,
+.card-business .card-title {
+    padding-top: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.card-eco .card-description,
+.card-business .card-description {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+.card-eco .card-description2,
+.card-business .card-description2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #7a543d;
+    font-size: 0.9rem;
+}
+.card-eco .donnée1,
+.card-business .donnée1 {
+    color: #f97316;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.card-eco .description_donnée,
+.card-business .description_donnée {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.card-eco .card-objective,
+.card-business .card-objective {
+    color: black;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    font-weight: bold;
+    background-color: #fff5ec;
+    border-left: 3px solid #ff6600;
+    border-radius: 0 6px 6px 0;
+    margin: 12px 0 0;
+    padding: 14px 16px;
+}
+
+.card-eco:hover,
+.card-business:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(61, 36, 14, 0.14);
+}
+/*image ce carte 1*/
+.content3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+.eolienne,
+.serveur {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(61, 36, 14, 0.12);
+}
+/*image de carte 2*/
+.content4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+/* carte 3 */
+
+.card3 {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 230px;
+    margin: 30px;
+    padding: 20px;
+    width: 50%;
+    
+    background-color: white;
+    
+   
+}
+
+.card3:hover{
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/*image de carte 3*/
+.content5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.recycle{
+    margin-top:120px;
+    margin-right: 20px;
+    margin: 10px;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+}
+.recycle:hover{
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
+}
+/* carte 4 */
+
+.card4 {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 230px;
+    margin: 30px;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    background-color: white;
+    
+   
+}
+
+.card4:hover{
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/*image de carte 4*/
+.content6{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.préserver{
+    margin-top:120px;
+    margin-left: 20px;
+    margin: 10px;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+}
+.préserver:hover{
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
+}
+
+@media (max-width: 760px) {
+    #geant-eco,
+    #business {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    #business > .business-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #business > .card-business {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .eolienne,
+    .serveur {
+        aspect-ratio: 16 / 10;
     }
 }
