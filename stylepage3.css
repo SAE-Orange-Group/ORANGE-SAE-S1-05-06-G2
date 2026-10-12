@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     outline-style: none;
+    
     }
 
 html {
@@ -273,16 +274,21 @@ html {
 .intro h2{
     font-size: 3.6rem;
     margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .sous_intro {
     font-size: 30px;
     margin: 20px;
     font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 .descri{
     font-size: 20px;
     margin: 20px;
     width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    line-height: 35px;
 }
 
 
@@ -291,6 +297,7 @@ html {
 #sect-2 .titre_descri h2{
     font-size: 3rem;
     margin: 20px;
+    font-family: "Times New Roman", Times, serif;
     
 }
 .titre_descri p{
@@ -298,6 +305,7 @@ html {
     font-size: 1.7rem;
     margin-bottom: 20px;
     margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 #sect-2 .titre_descri .highlight{
@@ -336,24 +344,29 @@ html {
     color: black;
     font-size: 2.8rem;
     margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
 }
 .card-description{
     color: black;
     font-size: 1.7rem;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 .card-description2{
     margin-bottom: 10px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .donnée1{
     font-size: 3rem;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .description_donnée{
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .card-objective{
     color: black;
@@ -366,7 +379,7 @@ html {
     background-color: #fff5ec;
     margin: 0 auto;
     padding: 10px;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card1:hover{
@@ -381,7 +394,6 @@ html {
     flex-direction: row;
     align-items: center;
     margin-bottom: 80px;
-    
 }
 .eolienne{
     margin-top:120px;
@@ -471,7 +483,7 @@ html {
     margin-bottom: 80px;
 }
 .recycle{
-  
+    margin-top:120px;
     margin-right: 20px;
     margin: 10px;
     width: 50%;
@@ -518,6 +530,7 @@ html {
     margin-top:120px;
     margin-left: 20px;
     margin: 10px;
+   
     width: 50%;
     height: 70%;
     border-radius: 10px;
