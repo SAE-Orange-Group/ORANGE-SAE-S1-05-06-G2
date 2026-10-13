@@ -1,175 +1,85 @@
-SUJET :
+# Titre sujet   
 
-[ORANGE-SAE-S1-05-06-G2](https://sae-orange-group.github.io/ORANGE-SAE-S1-05-06-G2/)
+## Sujet    
 
-## Fonctionnalités principales
+[Nom du projet](https://login.github.io/projet/)
 
-Le site propose plusieurs fonctionnalités permettant de rendre la présentation de l'entreprise claire et interactive :
+## Membres du groupe :
 
-* Navigation entre les différentes pages du site.
-* Menu de navigation accessible depuis les différentes pages.
-* Présentation des différentes thématiques liées à Orange.
-* Mise en avant des informations importantes à travers différentes sections.
-* Utilisation d'éléments visuels afin d'améliorer la compréhension du contenu.
-* Adaptation de l'affichage aux différentes tailles d'écran.
-* Utilisation de JavaScript pour ajouter des interactions à l'utilisateur.
+- [Nom prenom (référent)](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+- [Nom prenom](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
+- [Nom prenom](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
 
----
 
-## Travail réalisé sur la page Accueil
+## Présentation 
 
-### Responsable : Yassine
+Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la SAÉ 05-06 à l'IUT de Belfort-Montbéliard. Ce site présente des informations concernant l'entreprise ******** et sert de vitrine pour présenter l'entreprise, ses activités, son organisation et son historique.
 
-Yassine est responsable de la conception et du développement de la page d'accueil du site.
+## Choix de conception  
 
-Son travail comprend :
+Pour la conception du site, nous nous sommes grandement inspirés du site officiel de ******* (disponible [ici](https://www.entreprise.com/fr-fr/)), du site d'un de ses principaux concurrents [xxxxxxxxxx](https://www.entreprise2.fr/) et nous avons pris comme référence la charte de ************** disponible [ici](doc/charte_graphique.pdf).    
 
-* Création de la structure HTML de la page.
-* Mise en place de la navigation principale.
-* Création et organisation du menu.
-* Mise en forme de la page avec CSS.
-* Intégration des différentes sections de la page d'accueil.
-* Ajout des éléments visuels et des illustrations.
-* Utilisation de JavaScript pour les éléments interactifs.
-* Adaptation de la page aux différentes tailles d'écran.
-* Organisation des fichiers nécessaires au fonctionnement de la page.
-* Tests de la navigation et vérification du bon fonctionnement de la page.
 
-La page d'accueil constitue le point d'entrée principal du site. Elle permet à l'utilisateur de découvrir rapidement le projet et d'accéder aux différentes thématiques présentées.
+## Développement Site Web et Validation des pages
 
----
+### Page d'accueil
 
-## Design et identité visuelle
+**Auteur : Nom Prénom**  
 
-Le design du site s'inspire de l'univers visuel d'Orange.
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
 
-Une attention particulière a été portée à :
 
-* L'utilisation de la couleur orange comme couleur principale.
-* La lisibilité des textes.
-* La hiérarchisation des titres et des informations.
-* L'organisation des différentes sections.
-* L'utilisation d'images et d'icônes.
-* La simplicité de la navigation.
-* L'adaptation du design aux différents écrans.
+![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
 
-L'objectif est de proposer une interface moderne, claire et intuitive tout en conservant une cohérence graphique entre les différentes pages.
+ou 
 
----
+<img src="doc/capture_1_W3C.png" style="width=400px" alt="capture ecran sur w3c">
 
-## Responsive Design
 
-Le site a été conçu afin de pouvoir être consulté sur différents types d'appareils.
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/capture_1_ecoconcept.png)
 
-L'affichage est adapté notamment :
+ou 
 
-* aux ordinateurs ;
-* aux tablettes ;
-* aux smartphones.
+<img src="doc/capture_1_ecoconcept.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'éco-conception">
 
-Les différentes sections et éléments de navigation sont ajustés afin de conserver une bonne lisibilité et une navigation agréable quelle que soit la taille de l'écran.
+<!--  style="width=400px" ne fonctionne pas -->
 
----
+### Présentation générale
 
-## Gestion du projet avec GitHub
+**Auteur : Nom Prénom**  
 
-GitHub a été utilisé pour centraliser le code source et faciliter le travail en équipe.
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
 
-Chaque membre du groupe travaille sur la partie qui lui est attribuée et les différentes modifications sont ensuite regroupées dans le projet commun.
+<br>
+<img src="doc/capture_1_W3C.png" width="400px" alt="capture ecran sur ecoconcept">
 
-GitHub permet également de suivre l'évolution du projet et de conserver les différentes versions du code.
+<br>
+<img src="doc/capture_1_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
 
-Le site est déployé grâce à **GitHub Pages**.
+## Répartition du travail
 
----
+### Planification - Diagramme de GANTT
 
-## Hébergement
+- Nom Prénom
 
-Le site est accessible en ligne grâce à GitHub Pages :
+### Recherches d'informations
 
-**Site :**
-https://sae-orange-group.github.io/ORANGE-SAE-S1-05-06/
+- Nom Prénom
+- Nom Prénom
 
-Le dépôt GitHub contient l'ensemble des fichiers nécessaires au fonctionnement du site.
 
----
+### Développement site
 
-## Tests et vérifications
+- Nom Prénom
+  - Page d’accueil
+  - "Template" de page (Navbar/Footer)
+  - Page présentation
+- Nom Prénom
+  - Page histoire
+- Nom Prénom
+  - Page organisation
 
-Avant la mise en ligne du site, plusieurs vérifications ont été effectuées :
 
-* Vérification des liens entre les différentes pages.
-* Vérification de l'affichage des images.
-* Vérification du fonctionnement du menu de navigation.
-* Vérification des éléments interactifs.
-* Vérification de l'affichage sur différentes tailles d'écran.
-* Vérification de la cohérence graphique entre les pages.
-* Vérification de l'absence d'erreurs évidentes dans le code.
+## Contributeurs
 
----
-
-## Organisation du travail en équipe
-
-Le projet est réalisé en groupe et chaque membre est responsable d'une thématique :
-
-| Membre       | Page / Thématique |
-| ------------ | ----------------- |
-| **Yassine**  | Accueil           |
-| **Benjamin** | Économie          |
-| **Fanny**    | Écologie          |
-| **Defne**    | Innovations       |
-
-Un planning permet d'organiser les différentes étapes du projet, de répartir les tâches et de suivre l'avancement du travail.
-
----
-
-## Bilan du projet
-
-Ce projet nous a permis de mettre en pratique différentes compétences liées au développement web et au travail en équipe.
-
-Nous avons notamment travaillé sur :
-
-* la structuration d'une page web avec HTML ;
-* la mise en forme avec CSS ;
-* l'ajout d'interactions avec JavaScript ;
-* l'organisation d'un projet avec Git et GitHub ;
-* le travail collaboratif ;
-* la conception d'une interface adaptée aux utilisateurs ;
-* la gestion et la répartition des tâches au sein d'un groupe.
-
-Le projet nous a également permis de mieux comprendre les différentes étapes nécessaires à la réalisation d'un site web, de sa conception jusqu'à sa mise en ligne.
-
----
-
-## Sources
-
-Les informations et contenus utilisés pour la réalisation du site proviennent de différentes sources documentaires.
-
-Les sources utilisées sont indiquées et vérifiées dans le cadre du travail réalisé pour la SAE.
-
----
-
-## Accès au projet
-
-### Dépôt GitHub
-
-https://github.com/SAE-Orange-Group/ORANGE-SAE-S1-05-06-G2
-
-### Site en ligne
-
-https://sae-orange-group.github.io/ORANGE-SAE-S1-05-06/
-
----
-
-## Membres et responsabilités
-
-* **YASSINE** — Page Accueil
-* **BENJAMIN** — Page Économie
-* **FANNY** — Page Écologie
-* **DEFNE** — Page Innovations
-
-**Référente :** Defne Aksoy
-
-
-<img width="208" height="219" alt="image" src="https://github.com/user-attachments/assets/2e6b4207-0766-4329-9d9b-1bdc601a19f5" />
-
+![capture d'écran sur la contribution des membres du projet](doc/livrable2_contributors.png)
