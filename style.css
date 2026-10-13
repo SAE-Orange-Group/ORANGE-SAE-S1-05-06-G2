@@ -242,73 +242,86 @@ html[dir="rtl"] #sec-1 article {
 }
 
 #sec-2 {
-    padding: 3rem 0 1.8rem;
+    padding: 3rem 0 2.5rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(menuimages/paris.webp) no-repeat center center / cover;
     text-align: center;
 }
 
 #sec-2 .container > h1 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: var(--haccent);
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#sec-2 .container > p {
-    margin-bottom: 30px;
-    color: var(--txtaccent);
+#sec-2 .stats-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
 }
 
-#sec-2 article {
+#sec-2 .stat-card {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#sec-2 article figure {
-    max-width: 63%;
-    margin-top: 40px;
-    text-align: center;
-}
-
-#sec-2 article .cont {
-    margin-top: -75px;
-    padding: 95px 10px 20px;
-    border-radius: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    text-align: center;
-}
-
-#sec-2 article figure div:first-of-type {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: 10em;
-    height: 10em;
+    min-height: 170px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: var(--haccent2);
+    padding: 24px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    border-top: 4px solid var(--haccent);
+    border-radius: 6px;
+    background-color: rgba(255, 250, 245, 0.97);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-#sec-2 article figure img {
-    max-width: 55%;
+#sec-2 .stat-number {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--haccent);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
 }
 
-#sec-2 article figure h2 {
-    margin-bottom: 10px;
-    color: var(--haccent2);
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
+#sec-2 .stat-label {
+    max-width: 28ch;
+    color: var(--textaccent3);
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-#sec-2 article figure p {
-    color: var(--txtaccent);
-    font-size: 0.88rem;
-    text-shadow: 1px 1px #73757e;
+#sec-2 .stat-image {
+    display: block;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    filter: none;
+    object-fit: contain;
+}
+
+html[dir="rtl"] #sec-2 .stat-label {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #sec-2 .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    #sec-2 .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+    }
 }
 
 #sec-3 {
@@ -347,18 +360,28 @@ html[dir="rtl"] #sec-1 article {
 #sec-3 .caption {
     margin-bottom: 10px;
     color: var(--haccent);
-    font-size: 1.45rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
 }
 
 #sec-3 .card p {
     max-width: 58ch;
     color: #51443c;
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.7;
     hyphens: auto;
     text-align: left;
     overflow-wrap: break-word;
+}
+
+#sec-3 .offer-number {
+    display: block;
+    margin: 0.45rem 0;
+    color: var(--haccent);
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.15;
 }
 
 #sec-3 .offer-image {
@@ -385,6 +408,19 @@ html[dir="rtl"] #sec-3 .card p {
         grid-template-columns: minmax(0, 1fr) minmax(110px, 34%);
         gap: 12px;
         padding: 14px;
+    }
+
+    #sec-3 .caption {
+        font-size: 1.25rem;
+    }
+
+    #sec-3 .card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    #sec-3 .offer-number {
+        font-size: 1.8rem;
     }
 
     #sec-3 .offer-image {
@@ -469,13 +505,6 @@ html[dir="rtl"] #sec-3 .card p {
         padding: 4rem 0 2.5rem;
     }
 
-    #sec-2 article {
-        justify-content: space-between;
-    }
-
-    #sec-2 article figure {
-        max-width: 40%;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -513,13 +542,6 @@ html[dir="rtl"] #sec-3 .card p {
         background-position: center top;
     }
 
-    #sec-2 article {
-        justify-content: space-evenly;
-    }
-
-    #sec-2 article figure {
-        max-width: 21%;
-    }
 }
 
 @media (min-width: 1400px) {
