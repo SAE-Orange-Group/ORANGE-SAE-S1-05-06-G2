@@ -70,13 +70,13 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 **Auteur : Benoit Fanny**  
 
-Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsae-orange-group.github.io%2FORANGE-SAE-S1-05-06-G2%2Fpage1.html)
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsae-orange-group.github.io%2FORANGE-SAE-S1-05-06-G2%2Fpage3.html)
 
 <br>
-<img src="doc/Benjamin/capture_1_W3C.png" width="400px" alt="capture ecran sur W3C">
+<img src="doc/Fanny/capture_4_W3C.png" width="400px" alt="capture ecran sur W3C">
 
 <br>
-<img src="doc/Benjamin/capture_1_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
+<img src="doc/Fanny/capture_4_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
 
 ## Répartition du travail
 
