@@ -52,7 +52,7 @@ html {
     inset: 0;
     background:
         linear-gradient(rgba(252, 101, 1, 0.3), rgba(0, 0, 0, 0.5)),
-        url("images/ampoule.jpg") no-repeat center center / cover;
+        url("image/ampoule.jpg") no-repeat center center / cover;
     filter: blur(0px);
     transform: scale(1.02);
     background-size: 100% 100%;
@@ -310,7 +310,7 @@ html {
 
 .titre_descri {
     margin: 100px;
-    margin-left: 210px;
+    margin-left: 150px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -495,9 +495,9 @@ html {
 
 
 .grand-titre {
-    font-size: 3rem;
-    margin-left: 410px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-left: 350px;
 }
 
 .item-innovation {
@@ -540,6 +540,7 @@ html {
     color: #333;
     font-weight: 600;
     font-size: 1.6rem; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .cadre-texte {
@@ -554,7 +555,7 @@ html {
     background: rgba(255, 255, 255, 0.05); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px; 
-    font-size: 1.10rem;
+    font-size: 0.95rem!important;
     color: #222;
     transition: all 0.4s ease;
 }
@@ -569,6 +570,10 @@ html {
 }
 
 .titre_desc {
-    margin-left: 240px;
+    margin-left: 150px;
 }
 
+.you {
+    font-size: 1rem;
+    display: block; 
+}
