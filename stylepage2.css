@@ -311,6 +311,7 @@ html {
 .titre_descri {
     margin: 100px;
     margin-left: 150px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #sect-2 .titre_descri .highlight {
@@ -346,6 +347,7 @@ html {
     color: black;
     font-size: 2.8rem;
     margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card-description {
@@ -495,6 +497,7 @@ html {
 .grand-titre {
     font-size: 3rem;
     margin-left: 390px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .item-innovation {
