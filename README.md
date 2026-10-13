@@ -25,7 +25,7 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 
 ### Page d'accueil
 
-**Auteur : Nom Prénom**  
+**Auteur : Bakalec Benjamin**  
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsae-orange-group.github.io%2FORANGE-SAE-S1-05-06-G2%2Fpage1.html)
 
