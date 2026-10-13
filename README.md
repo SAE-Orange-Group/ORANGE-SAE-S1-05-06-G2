@@ -95,14 +95,6 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 ### Développement site
 
-- Nom Prénom
-  - Page d’accueil
-  - "Template" de page (Navbar/Footer)
-  - Page présentation
-- Nom Prénom
-  - Page histoire
-- Nom Prénom
-  - Page organisation
 Le projet est réalisé en groupe et chaque membre est responsable d'une thématique :
 
 | Membre       | Page / Thématique |
