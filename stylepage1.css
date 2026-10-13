@@ -333,7 +333,9 @@ html {
 }
 
 #geant-eco,
-#business {
+#business,
+#investissements,
+#force-humaine {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
@@ -348,6 +350,16 @@ html {
 }
 
 #business > .business-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#force-humaine > .card-humaine {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#force-humaine > .business-image {
     grid-column: 1;
     grid-row: 1;
 }
@@ -417,7 +429,9 @@ html {
 /* les cartes : */
 
 .card-eco,
-.card-business {
+.card-business,
+.card-investissements,
+.card-humaine {
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -449,7 +463,9 @@ html {
     margin-bottom: 16px;
 }
 .card-eco .card-title,
-.card-business .card-title {
+.card-business .card-title,
+.card-investissements .card-title,
+.card-humaine .card-title {
     padding-top: 10px;
     font-weight: bold;
     color: black;
@@ -457,21 +473,27 @@ html {
     margin-bottom: 10px;
 }
 .card-eco .card-description,
-.card-business .card-description {
+.card-business .card-description,
+.card-investissements .card-description,
+.card-humaine .card-description {
     color: black;
     font-size: 1.2rem;
     line-height: 1.65;
     margin-bottom: 10px;
 }
 .card-eco .card-description2,
-.card-business .card-description2 {
+.card-business .card-description2,
+.card-investissements .card-description2,
+.card-humaine .card-description2 {
     margin-bottom: 10px;
     font-weight: bold;
     color: #7a543d;
     font-size: 0.9rem;
 }
 .card-eco .donnée1,
-.card-business .donnée1 {
+.card-business .donnée1,
+.card-investissements .donnée1,
+.card-humaine .donnée1 {
     color: #f97316;
     font-size: 3.5rem;
     font-weight: 700;
@@ -480,12 +502,16 @@ html {
 }
 
 .card-eco .description_donnée,
-.card-business .description_donnée {
+.card-business .description_donnée,
+.card-investissements .description_donnée,
+.card-humaine .description_donnée {
     margin-bottom: 10px;
     line-height: 1.5;
 }
 .card-eco .card-objective,
-.card-business .card-objective {
+.card-business .card-objective,
+.card-investissements .card-objective,
+.card-humaine .card-objective {
     color: black;
     font-size: 1.15rem;
     line-height: 1.55;
@@ -498,7 +524,9 @@ html {
 }
 
 .card-eco:hover,
-.card-business:hover {
+.card-business:hover,
+.card-investissements:hover,
+.card-humaine:hover {
     transform: translateY(-3px);
     box-shadow: 0 18px 40px rgba(61, 36, 14, 0.14);
 }
@@ -621,7 +649,9 @@ html {
 
 @media (max-width: 760px) {
     #geant-eco,
-    #business {
+    #business,
+    #investissements,
+    #force-humaine {
         grid-template-columns: 1fr;
         gap: 24px;
     }
@@ -632,6 +662,16 @@ html {
     }
 
     #business > .card-business {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #force-humaine > .business-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #force-humaine > .card-humaine {
         grid-column: 1;
         grid-row: 2;
     }
