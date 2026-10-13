@@ -76,12 +76,59 @@ img {
 }
 
 #sec-0 header .meme {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-left: auto;
 }
 
 .me {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+}
+
+.language-picker {
+    flex-shrink: 0;
+}
+
+.language-picker select {
+    max-width: 110px;
+    padding: 7px 8px;
+    border: 1px solid var(--haccent);
+    border-radius: 4px;
+    background-color: #1a1c27;
+    color: #fff;
+    font: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+html[dir="rtl"] #sec-0 article,
+html[dir="rtl"] #sec-2,
+html[dir="rtl"] #sec-3 h1,
+html[dir="rtl"] #sec-7 {
+    text-align: center;
+}
+
+html[dir="rtl"] #sec-3 .card p {
+    text-align: right;
+}
+
+html[dir="rtl"] #sec-1 article {
+    text-align: right;
 }
 
 #sec-0 header nav a {
@@ -444,5 +491,22 @@ img {
 
     .container {
         width: 1340px;
+    }
+}
+
+@media (max-width: 767px) {
+    #sec-0 header.ana .container {
+        flex-wrap: wrap;
+    }
+
+    #sec-0 header .meme {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .me {
+        justify-content: center;
     }
 }
