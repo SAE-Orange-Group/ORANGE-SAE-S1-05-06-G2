@@ -52,7 +52,7 @@ html {
     inset: 0;
     background:
         linear-gradient(rgba(252, 101, 1, 0.3), rgba(0, 0, 0, 0.5)),
-        url("images/ampoule.jpg") no-repeat center center / cover;
+        url("ampoule.jpg") no-repeat center center / cover;
     filter: blur(0px);
     transform: scale(1.02);
     background-size: 100% 100%;
@@ -234,9 +234,6 @@ html {
     color: var(--haccent);
 }
 
-
-
-
 @media (max-width: 700px) {
     .section-content {
         grid-template-columns: 1fr;
@@ -255,33 +252,35 @@ html {
         margin-right: 10px;
     }
 }
-.card-list .card-item{
+
+.card-list .card-item {
     list-style: none;
-    
 }
+
 /* bande séparatrice orange */
 .hr {
-    margin: 20px;
+    margin: auto;
     margin-top: 100px;
-    width: 7%;
-    border-width: 2px;
+    margin-bottom: 75px;
+    width: 20%;
+    border-width: 3px;
     border-style: solid;
     color: var(--haccent);
 }
+
 /* l'introduction */
-.titre1 h2{
+.titre1 h2 {
     font-size: 3.6rem;
     margin-bottom: 20px;
 }
 
-.sec1{
-font-size: 30px;
-line-height: 1.8;
-margin:30px 0;
-}
-
-.sec1 p{
-margin-bottom: 30px;
+.sous-titres {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .sous_intro {
@@ -289,47 +288,47 @@ margin-bottom: 30px;
     margin: 20px;
     font-weight: bold;
 }
-.descri{
+
+.descri {
     font-size: 20px;
     margin: 20px;
     width: auto;
 }
 
-
-
 /* titre */
-#sect-2 .titre_descri h2{
+#sect-2 .titre_descri h2 {
     font-size: 3rem;
     margin: 20px;
-    
 }
-.titre_descri p{
+
+.titre_descri p {
     text-align: auto;
     font-size: 1.7rem;
     margin-bottom: 20px;
     margin: 20px;
-    
 }
-#sect-2 .titre_descri .highlight{
+
+.titre_descri {
+    margin: 100px;
+    margin-left: 150px;
+}
+
+#sect-2 .titre_descri .highlight {
     color: var(--haccent);
-    
 }
+
 /* les cartes : */
 
 /* carte 1 */
 .card1 {
-
     display: flex;
     flex-direction: column;
     position: relative;
-    
     margin: 30px;
     margin-top: 100px;
     padding: 20px;
     width: 50%;
     background-color: white;
-    
-   
 }
 
 .material-symbols-outlined {
@@ -340,74 +339,77 @@ margin-bottom: 30px;
     'opsz' 48;
     color: black;
 }
-.card-title{
+
+.card-title {
     padding-top: 10px;
     font-weight: bold;
     color: black;
     font-size: 2.8rem;
     margin-bottom: 10px;
 }
-.card-description{
+
+.card-description {
     color: black;
     font-size: 1.7rem;
     margin-bottom: 10px;
-   
 }
-.card-description2{
+
+.card-description2 {
     margin-bottom: 10px;
     font-weight: bold;
 }
-.donnée1{
+
+.donnée1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.description_donnée{
+.description_donnée {
     margin-bottom: 10px;
 }
-.card-objective{
+
+.card-objective {
     color: black;
     font-size: 2.1rem;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-    
     background-color: #fff5ec;
     margin: 0 auto;
     padding: 10px;
-    
 }
 
-.card1:hover{
+.card1:hover {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
 }
-/*image ce carte 1*/
-.content3{
+
+/*image de carte 1*/
+.content3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 80px;
-    
 }
-.eolienne{
-    margin-top:120px;
+
+.intelligence {
+    margin-top: 120px;
     margin-right: 20px;
     width: 50%;
     height: 70%;
     border-radius: 10px;
 }
-.eolienne:hover{
+
+.intelligence:hover {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
 }
+
 /* carte 2 */
 .card2 {
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -417,42 +419,39 @@ margin-bottom: 30px;
     width: 50%;
     margin-left: auto;
     background-color: white;
-    
-   
 }
 
-.card2:hover{
+.card2:hover {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
 }
+
 /*image de carte 2*/
-.content4{
+.content4 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 80px;
 }
-.serveur{
-    margin-top:120px;
+
+.startup {
+    margin-top: 120px;
     margin-left: 20px;
     margin: 10px;
     width: 50%;
     height: 70%;
     border-radius: 10px;
 }
-.serveur:hover{
+
+.startup:hover {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
 }
 
-
 /* carte 3 */
-
 .card3 {
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -460,84 +459,113 @@ margin-bottom: 30px;
     margin: 30px;
     padding: 20px;
     width: 50%;
-    
     background-color: white;
-    
-   
 }
 
-.card3:hover{
+.card3:hover {
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
 
+.orange2 {
+    margin-top: 120px;
+    margin-left: 20px;
+    margin: 10px;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.orange2:hover {
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
 }
 
 /*image de carte 3*/
-.content5{
+.content5 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 80px;
 }
-.recycle{
-    margin-top:120px;
-    margin-right: 20px;
-    margin: 10px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.recycle:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
-}
-/* carte 4 */
 
-.card4 {
 
+.grand-titre {
+    font-size: 3rem;
+    margin-left: 330px;
+}
+
+.item-innovation {
+    margin-left: 30px;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 230px;
-    margin: 30px;
-    padding: 20px;
-    width: 50%;
-    margin-left: auto;
-    background-color: white;
-    
-   
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    width: 240px;
 }
 
-.card4:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-}
-
-/*image de carte 4*/
-.content6{
+/* Style de la carte ronde */
+.card-round {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    border: 2px solid #ff7900;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-}
-.préserver{
-    margin-top:120px;
-    margin-left: 20px;
-    margin: 10px;
-    width: 50%;
-    height: 70%;
-    border-radius: 10px;
-}
-.préserver:hover{
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);    
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    outline: 2px solid transparent;
+    outline-offset: 0px;
 }
 
+.card-round:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    border-color: #ff7900;
+    color: #ff7900;
+    background-color: #ffffff;
+}
 
+.titre-lien {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.6rem; 
+}
 
+.cadre-texte {
+    width: 85%;
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px; 
+    font-size: 1.10rem;
+    color: #222;
+    transition: all 0.4s ease;
+}
+
+.cadre-texte:hover {
+    background: rgba(255, 255, 255, 0.25); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
+    transform: translateY(-3px);
+}
+
+.titre_desc {
+    margin-left: 150px;
+}
 
