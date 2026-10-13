@@ -233,7 +233,12 @@ html[dir="rtl"] #sec-1 article {
 }
 
 #sec-1 aside img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 #sec-2 {
@@ -307,12 +312,12 @@ html[dir="rtl"] #sec-1 article {
 }
 
 #sec-3 {
-    padding: 30px 0;
-    background-color: var(--txtaccent);
+    padding: 48px 0;
+    background: linear-gradient(180deg, #fff7f2 0%, #fff 100%);
 }
 
 #sec-3 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     color: var(--bgaccent);
     font-size: 1.7rem;
     font-weight: 900;
@@ -323,26 +328,34 @@ html[dir="rtl"] #sec-1 article {
 #sec-3 .cont {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
 #sec-3 .card {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(120px, 38%);
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 38%);
     align-items: center;
-    gap: 1.5rem;
+    gap: clamp(20px, 4vw, 56px);
     width: 100%;
+    padding: 22px;
+    border: 1px solid #f1e2d7;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(61, 36, 14, 0.06);
 }
 
 #sec-3 .caption {
-    margin-bottom: 0.75rem;
+    margin-bottom: 10px;
     color: var(--haccent);
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: 700;
 }
 
 #sec-3 .card p {
+    max-width: 58ch;
+    color: #51443c;
     font-size: 1rem;
+    line-height: 1.65;
     hyphens: auto;
     text-align: left;
     overflow-wrap: break-word;
@@ -351,8 +364,33 @@ html[dir="rtl"] #sec-1 article {
 #sec-3 .offer-image {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: 220px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff8f1;
+    filter: none;
     object-fit: contain;
+}
+
+html[dir="rtl"] #sec-3 .card p {
+    text-align: right;
+}
+
+@media (max-width: 575px) {
+    #sec-3 {
+        padding: 34px 0;
+    }
+
+    #sec-3 .card {
+        grid-template-columns: minmax(0, 1fr) minmax(110px, 34%);
+        gap: 12px;
+        padding: 14px;
+    }
+
+    #sec-3 .offer-image {
+        height: 145px;
+        padding: 6px;
+    }
 }
 
 #sec-7 {
