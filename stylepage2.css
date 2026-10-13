@@ -52,7 +52,7 @@ html {
     inset: 0;
     background:
         linear-gradient(rgba(252, 101, 1, 0.3), rgba(0, 0, 0, 0.5)),
-        url("ampoule.jpg") no-repeat center center / cover;
+        url("images/ampoule.jpg") no-repeat center center / cover;
     filter: blur(0px);
     transform: scale(1.02);
     background-size: 100% 100%;
