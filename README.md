@@ -6,18 +6,19 @@
 
 ## Membres du groupe :
 
-- [Nom prenom (référent)](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
-- [Nom prenom](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
-- [Nom prenom](mailto:nom.prenom@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
+- [Aksoy Defné (référent)](mailto:defne.aksoy@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+- [Bakalec Benjamin](mailto:benjamin.bakalec@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
+- [Belebbayda Yassine](mailto:yassine.belebbayda@edu.univ-fcomte.fr?subject=SAE_1_05_06)
+- [Benoit Fanny](mailto:fanny.benoit03@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
 
 
 ## Présentation 
 
-Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la SAÉ 05-06 à l'IUT de Belfort-Montbéliard. Ce site présente des informations concernant l'entreprise ******** et sert de vitrine pour présenter l'entreprise, ses activités, son organisation et son historique.
+Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la SAÉ 05-06 à l'IUT de Belfort-Montbéliard. Ce site présente des informations concernant l'entreprise Orange et sert de vitrine pour présenter l'entreprise, ses activités, son organisation et son historique.
 
 ## Choix de conception  
 
-Pour la conception du site, nous nous sommes grandement inspirés du site officiel de ******* (disponible [ici](https://www.entreprise.com/fr-fr/)), du site d'un de ses principaux concurrents [xxxxxxxxxx](https://www.entreprise2.fr/) et nous avons pris comme référence la charte de ************** disponible [ici](doc/charte_graphique.pdf).    
+Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Orange (disponible [ici](https://www.orange.com/fr-fr/)) et nous avons pris comme référence la charte de ************** disponible [ici](doc/charte_graphique.pdf).    
 
 
 ## Développement Site Web et Validation des pages
