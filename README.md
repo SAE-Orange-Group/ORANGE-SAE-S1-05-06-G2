@@ -30,18 +30,18 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsae-orange-group.github.io%2FORANGE-SAE-S1-05-06-G2%2Fpage1.html)
 
 
-![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
+![capture d'écran de la conformité de la page ...](doc/Benjamin/capture_1_W3C.png)
 
 ou 
 
-<img src="doc/capture_1_W3C.png" style="width=400px" alt="capture ecran sur w3c">
+<img src="doc/Benjamin/capture_1_W3C.png" style="width=400px" alt="capture ecran sur w3c">
 
 
-![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/capture_1_ecoconcept.png)
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/Benjamin/capture_1_ecoconcept.png)
 
 ou 
 
-<img src="doc/capture_1_ecoconcept.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'éco-conception">
+<img src="doc/Benjamin/capture_1_ecoconcept.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'éco-conception">
 
 <!--  style="width=400px" ne fonctionne pas -->
 
