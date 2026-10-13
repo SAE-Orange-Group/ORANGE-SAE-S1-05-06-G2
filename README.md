@@ -95,14 +95,17 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 ### Développement site
 
-Le projet est réalisé en groupe et chaque membre est responsable d'une thématique :
+Le projet est réalisé en groupe et chaque membre est responsable d'une thématique/ d'une page :
 
-| Membre       | Page / Thématique |
-| ------------ | ----------------- |
-| **Yassine**  | Accueil           |
-| **Benjamin** | Économie          |
-| **Fanny**    | Écologie          |
-| **Defne**    | Innovations       |
+|Page| Membre       | Page / Thématique |           
+|----| ------------ | ----------------- |
+| 1  | **Yassine**  | Accueil           |
+| 2  | **Benjamin** | Économie          |
+| 3  | **Fanny**    | Écologie          |
+| 4  | **Defne**    | Innovations       |
+
+<img width="194" height="142" alt="image" src="https://github.com/user-attachments/assets/5e1dac75-63bd-4160-b3dd-b31e5c93d481" />
+
 
 ## Contributeurs
 
