@@ -82,12 +82,15 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 ### Planification - Diagramme de GANTT
 
-- Nom Prénom
+- Benoit Fanny
+- Aksoy Defné
 
 ### Recherches d'informations
 
-- Nom Prénom
-- Nom Prénom
+- Aksoy Defné
+- Bakalec Benjamin
+- Belebbayda Yassine
+- Benoit Fanny
 
 
 ### Développement site
@@ -100,7 +103,14 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
   - Page histoire
 - Nom Prénom
   - Page organisation
+Le projet est réalisé en groupe et chaque membre est responsable d'une thématique :
 
+| Membre       | Page / Thématique |
+| ------------ | ----------------- |
+| **Yassine**  | Accueil           |
+| **Benjamin** | Économie          |
+| **Fanny**    | Écologie          |
+| **Defne**    | Innovations       |
 
 ## Contributeurs
 
