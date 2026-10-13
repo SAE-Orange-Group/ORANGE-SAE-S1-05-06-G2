@@ -110,3 +110,4 @@ Le projet est réalisé en groupe et chaque membre est responsable d'une thémat
 ## Contributeurs
 
 ![capture d'écran sur la contribution des membres du projet](doc/livrable2_contributors.png)
+![capture d'écran sur la contribution des membres du projet](doc/livrable2_contributors2.png)
