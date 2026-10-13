@@ -18,7 +18,7 @@ Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la S
 
 ## Choix de conception  
 
-Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Orange (disponible [ici](https://www.orange.com/fr-fr/)) et nous avons pris comme référence la charte de ************** disponible [ici](doc/charte_graphique.pdf).    
+Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Orange (disponible [ici](https://www.orange.com/fr-fr/)) et nous avons pris comme référence la charte de orange disponible [ici](doc/Charte_Graphique_Orange.pdf).    
 
 
 ## Développement Site Web et Validation des pages
