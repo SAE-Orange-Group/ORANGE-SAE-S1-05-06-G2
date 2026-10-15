@@ -497,7 +497,9 @@ html {
 .grand-titre {
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
-    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-innovation {
