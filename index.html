@@ -13,7 +13,7 @@
     <section id="sec-0">
         <header class="ana">
             <div class="hide" id="searchBar">
-                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exist">
+                <input type="search" name="searchBox" id="searchBox" data-i18n-placeholder="search-placeholder" placeholder="Saisissez votre recherche ici… Appuyez sur Échap pour quitter">
             </div>
             <div class="container">  
                     <img class="orange-logo" src="menuimages\orange.jpg" alt="Logo Orange" />
@@ -26,9 +26,17 @@
                 <nav class="me">
                     <a href="index.html" data-i18n="nav-index">Accueil</a>
                     <a href="page1.html" data-i18n="nav-economy">Economie</a>
-                    <a href="page2.html" data-i18n="nav-innovation">Innovation</a>
-                    <a href="page3.html" data-i18n="nav-ecology">Impact Ecologie</a>
+                    <a href="page3.html" data-i18n="nav-innovation">Innovation</a>
+                    <a href="page2.html" data-i18n="nav-ecology">Impact Ecologie</a>
                 </nav>
+                <label class="language-picker">
+                    <span class="visually-hidden" data-i18n="language-label">Langue</span>
+                    <select id="language-select" aria-label="Langue">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </label>
                 </div>
             </div>
         </header>
@@ -56,9 +64,8 @@
                          - 2013 : France Télécom adopte officiellement le nom Orange.
                    <br> Orange est un grand opérateur de télécommunications présent dans 26 pays, avec environ 340 millions de clients dans le monde. Le groupe est principalement actif en Europe, en Afrique et au Moyen-Orient.
                 </p>
-                 <h2 data-i18n="services-title">Orange, c’est bien plus qu’un réseau : c’est un lien entre les personnes, les idées et le monde numérique.</h2>
             </article>
-            <aside><img src="menuimages\orangestat.webp" alt="man"></aside>
+            <aside><img src="menuimages\orangestat.webp" data-i18n-alt="stats-image-alt" alt="Orange certifié Top Employer dans 30 pays et sur 5 continents"></aside>
         </div>
     </section>
     <section id="sec-2">
@@ -112,7 +119,7 @@
                             Améliorer la qualité de connexion et faciliter l’accès au très haut débit.
                         </p>
                     </div>
-                    <img src="menuimages/fibre.webp" class="offer-image" alt="Fibre Internet offer">
+                    <img src="menuimages\feei.png" class="offer-image" alt="Fibre Internet offer">
                 </div>
                 <div class="card">
                     <div class="offer-copy">
@@ -137,7 +144,7 @@ Objectif :
 Offrir une connexion fiable et faciliter les usages numériques au quotidien.
                         </p>
                     </div>
-                    <img src="menuimages/wifi.webp" class="offer-image" alt="Wi-Fi router for home use">
+                    <img src="menuimages\maison.png" class="offer-image" alt="Wi-Fi router for home use">
                 </div>
                 <div class="card">
                     <div class="offer-copy">
@@ -162,7 +169,7 @@ Objectif :
 Améliorer la couverture réseau et faciliter l’accès aux services numériques.
                         </p>
                     </div>
-                    <img src="menuimages/mobile.webp" class="offer-image" alt="Mobile services offer">
+                    <img src="menuimages\sm.png" class="offer-image" alt="Mobile services offer">
                 </div>
             </div>
         </div>
@@ -175,6 +182,126 @@ Améliorer la couverture réseau et faciliter l’accès aux services numérique
         </div>
     </section>
 
-   
+    <script>
+        const translations = {
+            fr: {
+                'page-title': 'Orange', 'language-label': 'Langue', 'search-placeholder': 'Saisissez votre recherche ici… Appuyez sur Échap pour quitter', 'stats-image-alt': 'Orange certifié Top Employer dans 30 pays et sur 5 continents',
+                tagline: 'Votre univers numérique, simplement',
+                'nav-index': 'Accueil', 'nav-economy': 'Économie', 'nav-ecology': 'Impact écologique', 'nav-innovation': 'Innovation', 'nav-help': 'Aide', 'nav-contact': 'Contact',
+                'hero-title': 'Votre opérateur Internet', 'hero-heading': 'Internet, Wi‑Fi et services numériques', 'hero-subheading': 'Rapide, fiable et pensé pour vous',
+                'hero-description': 'Découvrez nos offres Internet, nos solutions Wi‑Fi et nos services numériques. Profitez d’une connexion adaptée à vos besoins, d’un accompagnement personnalisé et de solutions simples pour rester connecté au quotidien.',
+                'hero-more': 'En savoir plus', 'hero-offers': 'Voir les offres',
+                'welcome-title': 'Orange : une histoire de connexion et d’innovation', 'services-title': 'Nos services',
+                'services-description': 'Depuis ses débuts en 1994, Orange accompagne l’évolution des télécommunications en proposant des solutions innovantes pour rapprocher les personnes et faciliter l’accès au numérique. De la téléphonie mobile à la fibre optique, en passant par la 4G et la 5G, Orange développe des technologies qui simplifient la communication au quotidien. Aujourd’hui, le groupe est présent à l’international et poursuit son engagement pour un monde plus connecté, en mettant l’accent sur la qualité de ses réseaux, l’innovation numérique et le développement durable. 1994 : création de la marque Orange au Royaume-Uni. 2000 : rachat d’Orange par France Télécom. 2013 : France Télécom adopte officiellement le nom Orange. Orange est un grand opérateur de télécommunications présent dans 26 pays, avec environ 340 millions de clients dans le monde. Le groupe est principalement actif en Europe, en Afrique et au Moyen-Orient.',
+                'stats-title': 'Quelques chiffres qui en disent long',
+                'stat-340-number': '340M', 'stat-340-label': 'clients utilisent nos services dans le monde.',
+                'stat-161-number': '161M', 'stat-161-label': 'clients en Afrique et au Moyen-Orient.',
+                'stat-140-number': '+140', 'stat-140-label': 'nationalités représentées.',
+                'stat-200-number': '+200', 'stat-200-label': 'pays couverts par les solutions Orange Business.',
+                'offers-title': 'Nos offres', 'fiber-title': 'Fibre & Internet', 'fiber-description': 'Orange développe la fibre optique pour offrir une connexion Internet rapide et stable aux particuliers et aux entreprises. CHIFFRE CLÉ : 15,4 millions de clients Fibre FTTH dans le monde fin 2025. Objectif : améliorer la qualité de connexion et faciliter l’accès au très haut débit.',
+                'wifi-title': 'Wi‑Fi à la maison', 'wifi-description': 'Orange propose des Livebox permettant de connecter les smartphones, ordinateurs, téléviseurs et autres équipements numériques à Internet sans fil. CHIFFRE CLÉ : 23,08 millions d’accès Internet fixe haut débit chez Orange au premier trimestre 2026. Objectif : offrir une connexion fiable et faciliter les usages numériques au quotidien.',
+                'mobile-title': 'Services mobiles', 'mobile-description': 'Orange propose des forfaits mobiles et des services Internet via ses réseaux mobiles pour permettre aux clients de communiquer et de rester connectés partout. CHIFFRE CLÉ : 275,5 millions d’accès mobiles dans le monde au 31 mars 2026. Objectif : améliorer la couverture réseau et faciliter l’accès aux services numériques.',
+                'footer-credit': 'Réalisé par SAE Groupe Team', 'footer-copy': '© 2026 | Yassine Team'
+            },
+            en: {
+                'page-title': 'Orange', 'language-label': 'Language', 'search-placeholder': 'Type your search here… Press Esc to exit', 'stats-image-alt': 'Orange certified as a Top Employer in 30 countries across 5 continents',
+                tagline: 'Your digital world, made simple',
+                'nav-index': 'Home', 'nav-economy': 'Economy', 'nav-ecology': 'Environmental impact', 'nav-innovation': 'Innovation', 'nav-help': 'Help', 'nav-contact': 'Contact',
+                'hero-title': 'Your Internet provider', 'hero-heading': 'Internet, Wi-Fi and digital services', 'hero-subheading': 'Fast, reliable and made for you',
+                'hero-description': 'Discover our Internet plans, Wi-Fi solutions and digital services. Enjoy a connection tailored to your needs, personal support and simple solutions to keep you connected every day.',
+                'hero-more': 'Learn more', 'hero-offers': 'Explore plans',
+                'welcome-title': 'Orange: a story of connection and innovation', 'services-title': 'Our services',
+                'services-description': 'Since its beginnings in 1994, Orange has supported the evolution of telecommunications by offering innovative solutions that bring people closer and make digital technology more accessible. From mobile telephony to fibre-optic broadband, including 4G and 5G, Orange develops technologies that make everyday communication easier. Today, the group operates internationally and continues its commitment to a more connected world, focusing on network quality, digital innovation and sustainable development. 1994: The Orange brand was created in the United Kingdom. 2000: France Télécom acquired Orange. 2013: France Télécom officially adopted the name Orange. Orange is a major telecommunications provider operating in 26 countries, with around 340 million customers worldwide. The group is mainly active in Europe, Africa and the Middle East.',
+                'stats-title': 'A few numbers that speak volumes',
+                'stat-340-number': '340M', 'stat-340-label': 'customers use our services worldwide.',
+                'stat-161-number': '161M', 'stat-161-label': 'customers in Africa and the Middle East.',
+                'stat-140-number': '+140', 'stat-140-label': 'nationalities represented.',
+                'stat-200-number': '+200', 'stat-200-label': 'countries covered by Orange Business solutions.',
+                'offers-title': 'Our offers', 'fiber-title': 'Fibre & Internet', 'fiber-description': 'Orange is expanding fibre-optic networks to provide fast, stable Internet connections for individuals and businesses. KEY FIGURE: 15.4 million FTTH fibre customers worldwide at the end of 2025. Goal: improve connection quality and make ultra-high-speed broadband more accessible.',
+                'wifi-title': 'Home Wi-Fi', 'wifi-description': 'Orange Liveboxes let you connect smartphones, computers, televisions and other digital devices to the Internet wirelessly. KEY FIGURE: 23.08 million high-speed fixed Internet accesses at Orange in the first quarter of 2026. Goal: provide a reliable connection and make everyday digital activities easier.',
+                'mobile-title': 'Mobile services', 'mobile-description': 'Orange offers mobile plans and Internet services through its mobile networks, helping customers communicate and stay connected wherever they are. KEY FIGURE: 275.5 million mobile accesses worldwide on 31 March 2026. Goal: improve network coverage and make digital services more accessible.',
+                'footer-credit': 'Made by SAE Groupe Team', 'footer-copy': '© 2026 | Yassine Team'
+            },
+            ar: {
+                'page-title': 'أورنج', 'language-label': 'اللغة', 'search-placeholder': 'اكتب ما تريد البحث عنه… اضغط على Esc للخروج', 'stats-image-alt': 'أورنج حاصلة على شهادة أفضل جهة عمل في 30 دولة عبر 5 قارات',
+                tagline: 'عالمك الرقمي بكل بساطة',
+                'nav-index': 'الرئيسية', 'nav-economy': 'الاقتصاد', 'nav-ecology': 'الأثر البيئي', 'nav-innovation': 'الابتكار', 'nav-help': 'المساعدة', 'nav-contact': 'اتصل بنا',
+                'hero-title': 'مزود الإنترنت الخاص بك', 'hero-heading': 'الإنترنت والواي فاي والخدمات الرقمية', 'hero-subheading': 'سريع وموثوق ومصمم من أجلك',
+                'hero-description': 'اكتشف عروض الإنترنت وحلول الواي فاي والخدمات الرقمية. استفد من اتصال يناسب احتياجاتك، ومرافقة شخصية، وحلول بسيطة لتبقى متصلاً كل يوم.',
+                'hero-more': 'اكتشف المزيد', 'hero-offers': 'تصفح العروض',
+                'welcome-title': 'أورنج: قصة من التواصل والابتكار', 'services-title': 'خدماتنا',
+                'services-description': 'منذ انطلاقتها عام 1994، واكبت أورنج تطور الاتصالات من خلال تقديم حلول مبتكرة تقرّب الناس وتسهل الوصول إلى العالم الرقمي. ومن خدمات الهاتف المحمول إلى الألياف البصرية، مروراً بشبكتي الجيل الرابع والخامس، تطور أورنج تقنيات تجعل التواصل اليومي أسهل. واليوم، تعمل المجموعة على المستوى الدولي وتواصل التزامها بعالم أكثر اتصالاً، مع التركيز على جودة الشبكات والابتكار الرقمي والتنمية المستدامة. 1994: تأسست علامة أورنج في المملكة المتحدة. 2000: استحوذت France Télécom على أورنج. 2013: اعتمدت France Télécom رسمياً اسم أورنج. أورنج شركة اتصالات كبرى تعمل في 26 دولة، ويبلغ عدد عملائها نحو 340 مليوناً حول العالم. وتنشط المجموعة بشكل رئيسي في أوروبا وأفريقيا والشرق الأوسط.',
+                'stats-title': 'أرقام تتحدث عن نفسها',
+                'stat-340-number': '340 مليون', 'stat-340-label': 'عميل يستخدم خدماتنا حول العالم.',
+                'stat-161-number': '161 مليون', 'stat-161-label': 'عميل في أفريقيا والشرق الأوسط.',
+                'stat-140-number': 'أكثر من 140', 'stat-140-label': 'جنسية ممثلة.',
+                'stat-200-number': 'أكثر من 200', 'stat-200-label': 'دولة تغطيها حلول Orange Business.',
+                'offers-title': 'عروضنا', 'fiber-title': 'الألياف البصرية والإنترنت', 'fiber-description': 'تطوّر أورنج شبكات الألياف البصرية لتوفير اتصال إنترنت سريع ومستقر للأفراد والشركات. الرقم الأبرز: 15.4 مليون عميل لخدمة الألياف FTTH حول العالم في نهاية عام 2025. الهدف: تحسين جودة الاتصال وتسهيل الوصول إلى الإنترنت فائق السرعة.',
+                'wifi-title': 'واي فاي في المنزل', 'wifi-description': 'تتيح أجهزة Livebox من أورنج توصيل الهواتف الذكية والحواسيب والتلفزيونات وغيرها من الأجهزة الرقمية بالإنترنت لاسلكياً. الرقم الأبرز: 23.08 مليون اشتراك إنترنت ثابت عالي السرعة لدى أورنج في الربع الأول من عام 2026. الهدف: توفير اتصال موثوق وتسهيل الاستخدامات الرقمية اليومية.',
+                'mobile-title': 'خدمات الهاتف المحمول', 'mobile-description': 'تقدم أورنج باقات للهاتف المحمول وخدمات إنترنت عبر شبكاتها لتمكين العملاء من التواصل والبقاء على اتصال أينما كانوا. الرقم الأبرز: 275.5 مليون اشتراك للهاتف المحمول حول العالم في 31 مارس 2026. الهدف: تحسين تغطية الشبكة وتسهيل الوصول إلى الخدمات الرقمية.',
+                'footer-credit': 'تنفيذ فريق SAE Groupe', 'footer-copy': '© 2026 | فريق ياسين'
+            }
+        };
+
+        const languageSelect = document.querySelector('#language-select');
+        const offerNumberPattern = /(\d[\d.,]*\s+(?:millions?|مليون(?:اً)?))/gi;
+
+        function emphasizeOfferNumbers(element) {
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+            const textNodes = [];
+
+            while (walker.nextNode()) {
+                textNodes.push(walker.currentNode);
+            }
+
+            textNodes.forEach((textNode) => {
+                const text = textNode.textContent;
+                const matches = [...text.matchAll(offerNumberPattern)];
+
+                if (!matches.length) {
+                    return;
+                }
+
+                const fragment = document.createDocumentFragment();
+                let position = 0;
+
+                matches.forEach((match) => {
+                    fragment.append(document.createTextNode(text.slice(position, match.index)));
+                    const number = document.createElement('span');
+                    number.className = 'offer-number';
+                    number.textContent = match[0];
+                    fragment.append(number);
+                    position = match.index + match[0].length;
+                });
+
+                fragment.append(document.createTextNode(text.slice(position)));
+                textNode.replaceWith(fragment);
+            });
+        }
+
+        document.querySelectorAll('#sec-3 .card p').forEach(emphasizeOfferNumbers);
+
+        function setLanguage(language) {
+            const dictionary = translations[language];
+            document.documentElement.lang = language;
+            document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+            document.title = dictionary['page-title'];
+            document.querySelectorAll('[data-i18n]').forEach((element) => {
+                element.textContent = dictionary[element.dataset.i18n];
+                if (element.matches('#sec-3 .card p')) {
+                    emphasizeOfferNumbers(element);
+                }
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+                element.setAttribute('placeholder', dictionary[element.dataset.i18nPlaceholder]);
+            });
+            document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+                element.setAttribute('alt', dictionary[element.dataset.i18nAlt]);
+            });
+            languageSelect.setAttribute('aria-label', dictionary['language-label']);
+        }
+
+        languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
+    </script>
 </body>
 </html>
