@@ -29,14 +29,6 @@
                     <a href="page2.html" data-i18n="nav-innovation">Innovation</a>
                     <a href="page3.html" data-i18n="nav-ecology">Impact Ecologie</a>
                 </nav>
-                <label class="language-picker">
-                    <span class="visually-hidden" data-i18n="language-label">Langue</span>
-                    <select id="language-select" aria-label="Langue">
-                        <option value="fr">Français</option>
-                        <option value="en">English</option>
-                        <option value="ar">العربية</option>
-                    </select>
-                </label>
                 </div>
             </div>
         </header>
@@ -183,120 +175,6 @@ Améliorer la couverture réseau et faciliter l’accès aux services numérique
         </div>
     </section>
 
-    <script>
-        const translations = {
-            fr: {
-                'page-title': 'Orange', 'language-label': 'Langue',
-                tagline: 'Votre univers numérique, simplement',
-                'nav-economy': 'Économie', 'nav-ecology': 'Écologie', 'nav-innovation': 'Innovation', 'nav-help': 'Aide', 'nav-contact': 'Contact',
-                'hero-title': 'Votre opérateur Internet', 'hero-heading': 'Internet, Wi‑Fi et services numériques', 'hero-subheading': 'Rapide, fiable et pensé pour vous',
-                'hero-description': 'Découvrez nos offres Internet, nos solutions Wi‑Fi et nos services numériques. Profitez d’une connexion adaptée à vos besoins, d’un accompagnement personnalisé et de solutions simples pour rester connecté au quotidien.',
-                'hero-more': 'En savoir plus', 'hero-offers': 'Voir les offres',
-                'welcome-title': 'Bienvenue chez votre opérateur Internet', 'services-title': 'Nos services',
-                'services-description': 'Retrouvez des solutions adaptées à chaque usage : Internet à la maison, Wi‑Fi, accompagnement client et services numériques. Choisissez l’offre qui correspond à votre quotidien et restez connecté où que vous soyez.',
-                'stats-title': 'Quelques chiffres qui en disent long',
-                'stat-340-number': '340M', 'stat-340-label': 'clients utilisent nos services dans le monde.',
-                'stat-161-number': '161M', 'stat-161-label': 'clients en Afrique et au Moyen-Orient.',
-                'stat-140-number': '+140', 'stat-140-label': 'nationalités représentées.',
-                'stat-200-number': '+200', 'stat-200-label': 'pays couverts par les solutions Orange Business.',
-                'offers-title': 'Nos offres', 'fiber-title': 'Fibre & Internet', 'fiber-description': 'Profitez d’une connexion rapide et stable pour naviguer, regarder vos contenus en streaming, travailler et rester connecté au quotidien. Haut débit. Connexion stable. Pour toute la maison.',
-                'wifi-title': 'Wi‑Fi à la maison', 'wifi-description': 'Profitez d’une connexion Wi‑Fi stable dans toute la maison pour connecter facilement vos appareils au quotidien. Bonne couverture Wi‑Fi. Dans toute la maison. Tous vos appareils connectés.',
-                'mobile-title': 'Services mobiles', 'mobile-description': 'Restez connecté partout avec nos offres mobiles adaptées à vos besoins. Profitez d’un réseau performant pour communiquer, naviguer sur Internet et utiliser vos applications au quotidien. Offres mobiles. Internet mobile. Réseau performant.',
-                'footer-credit': 'Réalisé par SAE Groupe Team', 'footer-copy': '© 2026 | Yassine Team'
-            },
-            en: {
-                'page-title': 'Orange', 'language-label': 'Language',
-                tagline: 'Your digital world, made simple',
-                'nav-economy': 'Economy', 'nav-ecology': 'Environment', 'nav-innovation': 'Innovation', 'nav-help': 'Help', 'nav-contact': 'Contact',
-                'hero-title': 'Your Internet provider', 'hero-heading': 'Internet, Wi-Fi and digital services', 'hero-subheading': 'Fast, reliable and made for you',
-                'hero-description': 'Discover our Internet plans, Wi-Fi solutions and digital services. Enjoy a connection tailored to your needs, personal support and simple solutions to keep you connected every day.',
-                'hero-more': 'Learn more', 'hero-offers': 'Explore plans',
-                'welcome-title': 'Welcome to your Internet provider', 'services-title': 'Our services',
-                'services-description': 'Find solutions for every need: home Internet, Wi-Fi, customer support and digital services. Choose the plan that fits your everyday life and stay connected wherever you are. Orange is a major telecommunications provider present in 26 countries, with around 340 million customers worldwide. The group operates mainly in Europe, Africa and the Middle East.',
-                'stats-title': 'A few numbers that speak volumes',
-                'stat-340-number': '340M', 'stat-340-label': 'customers use our services worldwide.',
-                'stat-161-number': '161M', 'stat-161-label': 'customers in Africa and the Middle East.',
-                'stat-140-number': '+140', 'stat-140-label': 'nationalities represented.',
-                'stat-200-number': '+200', 'stat-200-label': 'countries covered by Orange Business solutions.',
-                'offers-title': 'Our plans', 'fiber-title': 'Fibre & Internet', 'fiber-description': '- Enjoy a fast, stable connection for browsing, streaming, working and staying connected every day. High speed. Stable connection. For your whole home. - In France, Orange has around 15.4 million fibre customers worldwide, including nearly 10 million in France, according to figures from the end of 2025.',
-                'wifi-title': 'Home Wi-Fi', 'wifi-description': '- Enjoy stable Wi-Fi throughout your home and easily connect your devices every day. Good Wi-Fi coverage. Throughout the home. All your devices connected. - In France, Orange still had around 1.6 million non-fibre fixed Internet connections at the end of 2025.',
-                'mobile-title': 'Mobile services', 'mobile-description': '- Stay connected wherever you go with mobile plans tailored to your needs. Enjoy a high-performance network for calls, browsing and everyday apps. Mobile plans. Mobile Internet. High-performance network. - In France, Orange had 34 million customers in 2025, according to the group’s official figures. - Worldwide, Orange had 272.8 million mobile accesses at the end of 2025, according to its official figures.',
-                'footer-credit': 'Made by SAE Groupe Team', 'footer-copy': '© 2026 | Yassine Team'
-            },
-            ar: {
-                'page-title': 'أورنج', 'language-label': 'اللغة',
-                tagline: 'عالمك الرقمي بكل بساطة',
-                'nav-economy': 'الاقتصاد', 'nav-ecology': 'البيئة', 'nav-innovation': 'الابتكار', 'nav-help': 'المساعدة', 'nav-contact': 'اتصل بنا',
-                'hero-title': 'مزود الإنترنت الخاص بك', 'hero-heading': 'الإنترنت والواي فاي والخدمات الرقمية', 'hero-subheading': 'سريع وموثوق ومصمم من أجلك',
-                'hero-description': 'اكتشف عروض الإنترنت وحلول الواي فاي والخدمات الرقمية. استفد من اتصال يناسب احتياجاتك، ومرافقة شخصية، وحلول بسيطة لتبقى متصلاً كل يوم.',
-                'hero-more': 'اكتشف المزيد', 'hero-offers': 'تصفح العروض',
-                'welcome-title': 'مرحباً بك لدى مزود الإنترنت الخاص بك', 'services-title': 'خدماتنا',
-                'services-description': 'اكتشف حلولاً تناسب جميع الاستخدامات: إنترنت منزلي، وواي فاي، وخدمة العملاء، وخدمات رقمية. اختر العرض المناسب لحياتك اليومية وابقَ متصلاً أينما كنت. أورنج شركة اتصالات كبرى موجودة في 26 دولة، ويبلغ عدد عملائها نحو 340 مليوناً حول العالم. وتنشط المجموعة بشكل رئيسي في أوروبا وأفريقيا والشرق الأوسط.',
-                'stats-title': 'أرقام تتحدث عن نفسها',
-                'stat-340-number': '340 مليون', 'stat-340-label': 'عميل يستخدم خدماتنا حول العالم.',
-                'stat-161-number': '161 مليون', 'stat-161-label': 'عميل في أفريقيا والشرق الأوسط.',
-                'stat-140-number': 'أكثر من 140', 'stat-140-label': 'جنسية ممثلة.',
-                'stat-200-number': 'أكثر من 200', 'stat-200-label': 'دولة تغطيها حلول Orange Business.',
-                'offers-title': 'عروضنا', 'fiber-title': 'الألياف البصرية والإنترنت', 'fiber-description': '- استمتع باتصال سريع ومستقر للتصفح ومشاهدة المحتوى والعمل والبقاء متصلاً كل يوم. سرعة عالية. اتصال مستقر. لجميع أفراد المنزل. - في فرنسا، لدى أورنج نحو 15.4 مليون عميل للألياف البصرية حول العالم، من بينهم ما يقارب 10 ملايين في فرنسا، وفقاً لأرقام نهاية عام 2025.',
-                'wifi-title': 'واي فاي في المنزل', 'wifi-description': '- استمتع باتصال واي فاي مستقر في جميع أنحاء المنزل واربط أجهزتك بسهولة. تغطية واي فاي جيدة. في كل أرجاء المنزل. جميع أجهزتك متصلة. - في فرنسا، كان لدى أورنج نحو 1.6 مليون اشتراك إنترنت ثابت غير متصل بالألياف البصرية في نهاية عام 2025.',
-                'mobile-title': 'خدمات الهاتف المحمول', 'mobile-description': '- ابقَ متصلاً أينما كنت مع عروض الهاتف المحمول المناسبة لاحتياجاتك. استفد من شبكة فعالة للمكالمات وتصفح الإنترنت واستخدام التطبيقات. عروض الهاتف المحمول. إنترنت الهاتف المحمول. شبكة فعالة. - في فرنسا، بلغ عدد عملاء أورنج 34 مليوناً في عام 2025، وفقاً للأرقام الرسمية للمجموعة. - وعلى مستوى العالم، بلغ عدد اشتراكات الهاتف المحمول لدى أورنج 272.8 مليوناً في نهاية عام 2025، وفقاً لأرقامها الرسمية.',
-                'footer-credit': 'تنفيذ فريق SAE Groupe', 'footer-copy': '© 2026 | فريق ياسين'
-            }
-        };
-
-        const languageSelect = document.querySelector('#language-select');
-        const offerNumberPattern = /(\d[\d.,]*\s+(?:millions?|مليون(?:اً)?))/gi;
-
-        function emphasizeOfferNumbers(element) {
-            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
-            const textNodes = [];
-
-            while (walker.nextNode()) {
-                textNodes.push(walker.currentNode);
-            }
-
-            textNodes.forEach((textNode) => {
-                const text = textNode.textContent;
-                const matches = [...text.matchAll(offerNumberPattern)];
-
-                if (!matches.length) {
-                    return;
-                }
-
-                const fragment = document.createDocumentFragment();
-                let position = 0;
-
-                matches.forEach((match) => {
-                    fragment.append(document.createTextNode(text.slice(position, match.index)));
-                    const number = document.createElement('span');
-                    number.className = 'offer-number';
-                    number.textContent = match[0];
-                    fragment.append(number);
-                    position = match.index + match[0].length;
-                });
-
-                fragment.append(document.createTextNode(text.slice(position)));
-                textNode.replaceWith(fragment);
-            });
-        }
-
-        document.querySelectorAll('#sec-3 .card p').forEach(emphasizeOfferNumbers);
-
-        function setLanguage(language) {
-            const dictionary = translations[language];
-            document.documentElement.lang = language;
-            document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-            document.title = dictionary['page-title'];
-            document.querySelectorAll('[data-i18n]').forEach((element) => {
-                element.textContent = dictionary[element.dataset.i18n];
-                if (element.matches('#sec-3 .card p')) {
-                    emphasizeOfferNumbers(element);
-                }
-            });
-            languageSelect.setAttribute('aria-label', dictionary['language-label']);
-        }
-
-        languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
-    </script>
+   
 </body>
 </html>
